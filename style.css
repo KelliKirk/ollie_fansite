@@ -1,0 +1,618 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Crimson+Text&display=swap');
+
+body {
+  font-family: 'Roboto Slab', sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #171717;
+  color: #c0c0c0;
+}
+
+
+.navbar.bg-dark {
+  background-color: #171717 !important;
+}
+
+.navbar-logo-img {
+  max-height: 25px;
+  width: auto;
+  margin-right: 8px; /* Nihutab logo paremale */
+}
+
+.navbar .container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+#carouselExampleCaptions {
+  width: 100%; 
+  height: auto; 
+  margin: 56 px 0 0 0 ;
+  overflow: hidden;
+  background-color: #171717; 
+  border: none; 
+  position: relative;
+}
+
+.carousel-item {
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: none; /* Kindlustab, et piltidel pole äärist */
+  object-fit: cover;
+  object-position: center;
+}
+
+.carousel-item .carousel-caption {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Lisab tekstivarju */
+    position: absolute; /* Muudab alapealkirja paigutuse absoluutseks */
+    bottom: 20%; 
+    left: 50%; /* Keskendab alapealkirja horisontaalselt */
+    transform: translateX(-50%); /* Tagab horisontaalse keskendumise */
+    color: #ffffff; /* Määrab alapealkirja värviks valge, et tagada loetavus */
+    z-index: 10; /* Tagab, et alapealkiri oleks pildist eespool */
+    text-align: center; /* Keskendab teksti */
+    width: 80%; /* Kitsendab alapealkirja laiust */
+  }
+
+.social-icons {
+  display: flex;
+  gap: 1rem;  /* Vahe ikoonide vahel */
+  font-size: 4rem;  /* Ikoonide suurus */
+}
+
+.social-icons a {
+  font-size: 30px;
+  color: inherit;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.social-icons a:hover {
+  color: #7839B3;
+}
+
+footer {
+  padding: 2rem 0;  /* Ühtlane vahe üles-alla */
+}
+
+.crimson-font {
+  font-family: 'Crimson Text';
+}
+
+.playlist-section {
+    padding: 20px;
+    background-color: #171717;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;  /* Ühtlane vahe elementide vahel */
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;  /* Eemaldame vaikimisi marginid */
+    }
+
+    .about-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      width: 100%; /* Täidab vanemkonteineri laiuse */
+      max-width: 1440px; /* Võib jätta kui soovite piirata laiust */
+      margin: auto;
+    }
+    
+    .about-image-container {
+      position: relative;
+      width: 100vw; /* Täidab kogu vaateakna laiuse */
+      height: auto;
+      overflow: hidden; /* Peidab üleliigse osa */
+      margin: 0; /* Eemaldab kõik marginaalid */
+      }
+    
+      .about-image {
+        width: 100%; /* Täidab kogu konteineri laiuse */
+        height: auto; 
+        object-fit: cover; /* Pildi säilitamine ilma moonutusteta */
+      }
+    
+    .about-image-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%; /* Täidab kogu konteineri laiuse */
+      height: auto;
+      background-color: rgba(0, 0, 0, 0.3) /*lisab varju*/
+    }
+    
+    /* Tekstikastide stiil, et need täidaks ekraani mõlemad servad */
+    .about-text, .info-block, .block {
+      background-color: #171717;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 100vw; /* Täidab kogu vaateakna laiuse */
+      text-align: center;
+      opacity: 90%;
+      margin-bottom: 10px;
+    }
+    
+    .container2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      position: relative; /*Paigutab nupu õigesse kohta*/
+    }
+    
+    .block-container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    
+    .block {
+      flex: 1;
+      padding: 20px;
+      background-color: #171717;
+      border: 1px solid #171717;
+      border-radius: 8px;
+      width: 100vw; /* Täidab kogu vaateakna laiuse */
+    }
+
+    .info-block {
+      display: flex;
+      justify-content: center; /* Keskendab kogu loendi horisontaalselt */
+      flex-direction: column;
+      align-items: center; /* Keskendab sisu vertikaalselt */
+    }
+    
+    .info-block h2 {
+      text-align: center; /* Keskendab pealkirja */
+      margin-bottom: 20px; /* Lisab vahemaa pealkirja alla */
+    }
+
+    .info-block ul {
+      list-style-position: inside; /* Paigutab punktid loendi elemendi sisse */
+      padding-left: 0; /* Eemaldab vasaku täiendava täpsustuse */
+      margin: 0 auto; /* Keskendab kogu loendi */
+      text-align: left; /* Hoidke iga elemendi tekst vasakule joondatuna */
+      display: flex; /* Kasutame flexi, et paigutada punktid üksteise alla */
+      flex-direction: column; /* Paigutame punktid vertikaalselt */
+      align-items: justify; /* Keskendab kõik elemendid horisontaalselt */
+    }
+    
+    .info-block li {
+      list-style-type: disc; /* Näitab loendi punkte */
+      margin: 10px 0; /* Lisab iga elemendi vahele natuke vahemaa */
+    }
+    .block-container2 {
+      display: flex;
+      justify-content: center; /* Keskendab kogu sisu horisontaalselt */
+      flex-direction: column;
+      align-items: center; /* Keskendab sisu vertikaalselt */
+    }
+    
+    .block-container2 h2 {
+      text-align: center; /* Keskendab pealkirja */
+      margin-bottom: 20px; /* Lisab vahemaa pealkirja alla */
+    }
+    
+    .block2 ul {
+      list-style-position: inside; /* Paigutab punktid loendi elemendi sisse */
+      padding-left: 0; /* Eemaldab vasaku täiendava täpsustuse */
+      margin: 0; /* Eemaldab üleliigse vahe */
+      text-align: left; /* Hoiab iga elemendi teksti vasakule joondatuna */
+      display: flex; /* Kasutame flexi, et paigutada punktid üksteise alla */
+      flex-direction: column; /* Paigutame punktid vertikaalselt */
+      align-items: justify; /* Hoiab punktid üksteise all, kuid paigutab need õigesti */
+    }
+    
+    .block2 li {
+      list-style-type: disc; /* Näitab loendi punkte */
+      margin: 10px 0; /* Lisab iga elemendi vahele natuke vahemaa */
+    }
+
+    .content-wrapper {
+      position: relative;
+      min-height: calc(100vh - 200px); /* Lahutame footer'i ja navbar'i umbkaudse kõrguse */
+      padding-bottom: 60px; /* Ruumi nupu jaoks */
+    }
+    
+    .button-container {
+      position: relative;
+      width: 100%;
+      height: 50px; /* Kõrgus nupu jaoks */
+      margin-top: 20px;
+    }
+    
+    .btn-custom {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      background-color: #7839B3;
+      color: #c0c0c0;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+    }
+    
+    .btn-custom:hover {
+      background-color: #662D99; /* Tumedam värv hover'i ajal */
+      color: #171717;
+      text-decoration: none;
+    }
+    
+    .video-container {
+      background-color: rgba(23, 23, 23, 0.7);
+      border: 16px solid rgba(23, 23, 23, 0.7);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    }
+    
+    .video-text {
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #c0c0c0;
+    }
+    
+    video {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+  /* Kontsertide kast */
+    .concert-box {
+      background-color: rgba(23, 23, 23, 0.7);
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      padding: 1rem;  /* Ühtlane padjad kontserdikastide sees */
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start; /* Paigutus ülespoole */
+      align-items: center;  /* Horisontaalne tsentreerimine */
+      transition: transform 0.3s ease;  /* Lisab sujuva ülemineku */
+    }
+
+/* Kontserdi info stiil */
+  .concert-info {
+    color: #c0c0c0;
+    padding: 1.5rem 1rem;  /* Väheneb üleliigne padja ruum */
+    text-align: left;  /* Asetab teksti vasakule, et muuta sisu kompaktsemaks */
+    display: flex;  /* Lisame flexi, et muuta sisu paigutust */
+    flex-direction: column;  /* Asetab elemendid vertikaalselt */
+    justify-content: center; /* Vertikaalne joondus */
+    align-items: center;  /* Horisontaalne joondus */
+}
+
+/* Pealkirjade stiil */
+.concert-info h3 {
+  font-size: 1.2rem;
+  color: #c0c0c0;
+  text-align: center;
+  display: flex; /* Kasutame flexi */
+  justify-content: center; /* Horisontaalne keskjoondus */
+  align-items: center; /* Vertikaalne keskjoondus */
+  margin: 0;  /* Eemaldab ülemise ja alumise vahe */
+  padding: 10px 0;  /* Lisame paddingu, et luua ruumi pealkirja ümber */
+  display: inline-block; /* Säilitab pealkirja struktuuri */
+}
+
+/* Ikoonide stiil */
+.concert-info i {
+  opacity: 0.8;
+  width: 16px;
+  margin-right: 8px;  /* Väike vahe ikoonide ja tekstide vahel */
+  margin-left: 8px;
+}
+
+/* Üldine tekstivorming */
+.concert-info p {
+  margin-top: 0.5rem;  
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.concert-box .concert-info {
+  min-height: 300px; /* Ühtlane minimaalne kõrgus kõigile kastidele */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Muudame linkide värvi */
+.concert-info a {
+  color: #e8e8e8; 
+  text-decoration: none; /* Eemaldab lingi alljoone */
+}
+
+/* Kui link on hoveri peal */
+.concert-info a:hover {
+  color: #9B59B6; /* Muudab hoveri värviks teise tooni */
+}
+
+/* Ikoonide stiil */
+.concert-info i {
+  width: 16px;
+  margin-right: 5px; /* Lisame väikese vahe ikoonide ja teksti vahele */
+  margin-left: 5px; /* Lisame vasakule ikoonide vahe */
+}
+
+
+h2 {
+  margin-bottom: 10px;
+  color: #c0c0c0;
+}
+
+.img-fluid {
+  border: 2px solid #c0c0c0;
+  border-radius: 5px;
+}
+.img-fluid:hover {
+  border-color: #aaa;
+}
+
+.thumbnail {
+  height: 150px;
+  object-fit: cover;
+  width: 100%;
+  border: 2px solid #171717; /* Sobib must raam ka thumbnailidele */
+}
+
+.thumbnail:hover {
+  border-color: #c0c0c0; /* Hover sama efektiga */
+}
+
+.modal-body img {
+  max-height: 90vh;
+  object-fit: contain;
+}
+
+.modal-content {
+  background-color: rgba(23, 23, 23, 0.7); /* Must taust läbipaistvusega */
+  color: #c0c0c0; /* Teksti värv */
+  border: 1px solid #c0c0c0; /* Hall serv */
+}
+
+.modal-header {
+  border-bottom: 1px solid #c0c0c0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+  min-height: 60px;
+}
+
+.modal-title {
+  margin: 0;
+  color: #c0c0c0;
+  text-align: center;
+  font-size: 1.25rem;
+ justify-content: center;
+ line-height: 1.5; /* Ühtlane reavahe */
+}
+
+.photo-credit {
+  font-size: 0.85rem;
+  color: #a0a0a0;
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+/* Sulgemisnupu stiilid */
+.btn-close {
+  --bs-btn-close-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e"); /* Valge SVG */
+  --bs-btn-close-opacity: 1;
+  background-color: transparent;
+  border: 2px solid #c0c0c0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  opacity: 1;
+  padding: 0.5rem;
+  margin: auto 0; /* Vertikaalne tsentreerimine */
+  position: static;
+  top: 50%; /* Vertikaalne tsentreerimine */
+  transform: none;
+
+}
+
+.btn-close:hover {
+  --bs-btn-close-opacity: 0.8;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+
+/* Bootstrapi img-thumbnaili üle kirjutamine, et saada thumbnaili raamile soovitud värv */
+.img-thumbnail.thumbnail {
+  height: 150px;
+  object-fit: cover;
+  width: 100%;
+  border: 2px solid #171717 !important; /* !important kirjutab üle Bootstrapi stiilid */
+  border-radius: 5px;
+  padding: 0; /* Eemaldab vaikimisi Bootstrapi paddingu */
+  box-sizing: border-box;
+}
+
+.img-thumbnail.thumbnail:hover {
+  border-color: #c0c0c0 !important;
+  transition: border-color 0.2s ease;
+}
+
+.gallery-container {
+  margin-top: 20px;
+  padding-left: 5%; /* Vasakpoolne ruum */
+  padding-right: 5%; /* Parempoolne ruum */
+}
+
+/* Navigatsiooninupud modaalides */
+.btn-secondary {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #c0c0c0;
+  border: none;
+  font-size: 1.5rem;
+  z-index: 1050;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+/* Saada nupu stiilid */
+    /* Custom button styling */
+    .btn-primary {
+      background-color: #7839B3;
+      color: #c0c0c0;
+      border: none;
+    }
+    .btn-primary:hover {
+      background-color: #662D99;
+      color: #171717;
+      border: none;
+    }
+
+    form {
+      margin-top: 30px; /* Kohanda vastavalt vajadusele */
+    }
+
+    @media (max-width: 768px) {
+      /* Navigatsiooniriba */
+      .navbar {
+        height: 60px;
+      }
+      
+      body {
+        padding-top: 60px;
+      }
+    
+      /* Hamburger menüü */
+      .navbar-collapse {
+        background-color: #171717;
+        padding: 1rem;
+        margin: 0 -1rem;  /* Kompenseerib container-fluid paddingu */
+      }
+    
+      /* Karussell */
+      .carousel {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+      }
+    
+      .carousel-item {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+      }
+    
+      .carousel-item img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    
+      /* Teksti stiilimine ja asend */
+      .carousel-caption {
+        position: absolute;
+        left: 50%;
+        top: 10%;
+        transform: translateX(-50%);
+        width: 90%;
+        padding: 15px;
+        z-index: 15;
+      }
+    
+      /* H5 kohandus */
+      .carousel-caption h5 {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+        padding-top: 0;  /* Eemaldame ülemise paddingu */
+        margin-top: 0;   /* Eemaldame ülemise margini */
+      }
+    
+      .carousel-caption p {
+        font-size: 0.85rem;
+        line-height: 1.3;
+        margin-top: 10%;
+      }
+    
+      /* Indikaatorid */
+      .carousel-indicators {
+        position: absolute;
+        bottom: 5%;
+        left: 0;
+        right: 0;
+        z-index: 20;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+    
+      .carousel-indicators [data-bs-target] {
+        box-sizing: content-box;
+        flex: 0 1 auto;
+        width: 30px;
+        height: 3px;
+        margin-right: 3px;
+        margin-left: 3px;
+        text-indent: -999px;
+        background-color: #c0c0c0;
+        border: 0;
+        opacity: .5;
+        transition: opacity .6s ease;
+      }
+    
+      .carousel-indicators .active {
+        opacity: 1;
+      }
+    
+      .carousel-control-prev,
+      .carousel-control-next {
+        z-index: 25;
+        width: 15%;
+      }
+    }
